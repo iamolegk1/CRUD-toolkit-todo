@@ -16,7 +16,7 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className="flex flex-col flex-wrap justify-center items-center w-full mt-20">
       <AddTask data={data} setData={setData} handleClick={handleClick} />
       <TaskList />
     </div>
