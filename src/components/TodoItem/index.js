@@ -1,17 +1,16 @@
 import { useDispatch } from "react-redux";
-import { toggleTodo, deleteTodo } from "../../Slice/todoSlice";
-
-const TodoItem = ({ id, text, status }) => {
+import { toggleCompleted, deleteTodo } from "../../Slice/todoSlice";
+const TodoItem = ({ id, todo, completed }) => {
   const dispatch = useDispatch();
 
   return (
     <li className="flex px-3 py-3 border-b border-gray-200 w-full min-h-0">
       <div
         className={`w-11/12 min-h-full w-11/12 break-words text-lg
-      ${status ? "line-through" : null}
+      ${completed ? "line-through" : null}
       `}
       >
-        {text}
+        {todo}
       </div>
       <div className="flex flex-col justify-center gap-5 w-1/12">
         <div
@@ -23,8 +22,8 @@ const TodoItem = ({ id, text, status }) => {
         <input
           type="checkbox"
           className="cursor-pointer border-gray-300 rounded h-6 w-6 mx-auto"
-          checked={status}
-          onChange={() => dispatch(toggleTodo(id))}
+          checked={completed}
+          onChange={() => dispatch(toggleCompleted(id))}
         />
       </div>
     </li>

@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 import AppTodo from "./components/AppTodo";
 
-import "./index.css";
+import "./styles/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
