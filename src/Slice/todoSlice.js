@@ -6,7 +6,6 @@ const baseHttps = "https://dummyjson.com/todos";
 export const fetchTodo = createAsyncThunk("todo/fetchTodo", async () => {
   const { request } = useFetch();
   const data = await request(`${baseHttps}?limit=7`, "GET");
-  console.log(data);
   return data;
 });
 

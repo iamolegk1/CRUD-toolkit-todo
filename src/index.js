@@ -9,9 +9,7 @@ import "./styles/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <AppTodo />
-    </Provider>
-  </React.StrictMode>
+  <Provider store={store}>
+    <AppTodo />
+  </Provider>
 );

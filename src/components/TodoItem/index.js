@@ -1,12 +1,13 @@
+import React from "react";
 import { useDispatch } from "react-redux";
 import { toggleCompleted, deleteTodo } from "../../Slice/todoSlice";
+
 const TodoItem = ({ id, todo, completed }) => {
   const dispatch = useDispatch();
-
   return (
-    <li className="flex px-3 py-3 border-b border-gray-200 w-full min-h-0">
+    <li className="flex px-3 py-3 border-b border-gray-200 w-full min-h-[100px]">
       <div
-        className={`w-11/12 min-h-full w-11/12 break-words text-lg
+        className={`w-11/12 min-h-full break-words text-lg
       ${completed ? "line-through" : null}
       `}
       >
