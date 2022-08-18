@@ -2,7 +2,7 @@
 
 This is a CRUDserver-Todo project using the following technologies:
 
-React, Redux Toolkit, and React Router for the frontend
+React and Redux Toolkit for the frontend
 
 Tailwind for styles 
 
