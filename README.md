@@ -1,15 +1,12 @@
-# Getting Started with Create React App
+# CRUDserver-Toolkit-Todo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a CRUDserver-Todo project using the following technologies:
 
-## Available Scripts
+React, Redux Toolkit, and React Router for the frontend
 
-In the project directory, you can run:
+Tailwind for styles 
 
-### `npm start`
+https://user-images.githubusercontent.com/86320945/185451794-8b5c7d62-ab5c-42f2-aafe-4f18abde9d4d.mp4
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+
